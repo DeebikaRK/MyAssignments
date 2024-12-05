@@ -1,6 +1,6 @@
 package week3.day1;
 
-public class JavaConnection implements DatabaseConnection {
+public class JavaConnection extends MySqlConnection {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -8,7 +8,7 @@ public class JavaConnection implements DatabaseConnection {
 		db.connect();
 		db.disconnect();
 		db.executeUpdate();
-
+		db.executeQuery();
 	}
 
 	@Override
